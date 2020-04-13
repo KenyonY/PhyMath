@@ -1,5 +1,5 @@
 
-## 一维积分：
+## 一维积分
 
 $$
 \begin{equation}
@@ -41,11 +41,13 @@ $$
 
 
 
-##  二维积分：
+##  二维积分
 
 对于两个变量的积分的表达式，比如x和y，可以写成两种积分符号：
 $$
+\begin{equation}
 \iint f(x, y) d x d y \text { 或者 } \, \int_{x_{1}}^{x_{2}} d x \int_{y_{1}(x)}^{y_{2}(x)} d y\ f(x, y) \label{integ2d}
+\end{equation}
 $$
 
 
@@ -57,7 +59,7 @@ $$
 
 OK，这不是重点。
 
-对于公式$\ref{integ2d}$ ，将其中的$f(x,y)$变量分离为 $f_1(x)f_2(y)$ ，将得到：
+对于公式$(\ref{integ2d})$ ，将其中的$f(x,y)$变量分离为 $f_1(x)f_2(y)$ ，将得到：
 $$
 \label{sepa_value}
 \int_{x_1}^{x_2} f_1(x)dx \int_{y_1(x)}^{y_2(x)} f_2(y)dy\\
@@ -68,11 +70,8 @@ $$
 \begin{equation}
 \begin{aligned}
 &\int_{x_1}^{x_2} dx \int_{y_1(x)}^{y_2(x)}dy \ f_1(x)f_2(y)\\
-
 &\approx  \Delta x \Delta y \sum_{i}^{N}\sum_{j}^{M}\ f_1(x_i)f_2(y_j) \\
-
 &=\frac{x_2 - x_1}{N} \frac{y_2(x) - y_1(x)}{M} \sum \vec{f_1(x)} \otimes \vec{f_2(y)}
-
 \end{aligned}
 \end{equation}
 $$
@@ -90,18 +89,41 @@ $$
 \pi = I(f) =\int_{0}^{1}\frac{4}{1+x^2}dx
 $$
 
-
 二维：
 $$
-I(f(x, y))=\int_{1}^{2} \int_{1}^{x} x y d x d y \\
+\begin{equation}
+I(f(x, y))=\int_{1}^{2} \int_{1}^{x} x y d x d y
+\end{equation}
+$$
 
+$$
+\begin{equation}
 \begin{aligned}
 \iint x y \, \mathrm{d} \sigma &=\int_{1}^{2}\left[\int_{1}^{x} x y \mathrm{d} y\right] \mathrm{d} x=\int_{1}^{2}\left[x \cdot \frac{y^{2}}{2}\right]_{1}^{x} \mathrm{d} x \\
 &=\int_{1}^{2}\left(\frac{x^{3}}{2}-\frac{x}{2}\right) \mathrm{d} x=\left[\frac{x^{4}}{8}-\frac{x^{2}}{4}\right]_{1}^{2}=\frac{9}{8}
 \end{aligned}
+\end{equation}
 $$
 
-<img src="upload/image-20200404224411207.png" alt="image-20200404224411207" style="zoom: 67%;" />
+
+
+![image1](upload/image-20200404224411207.png)
+
+
+
+<iframe height=500 width=500 src="upload/probar.gif"></iframe>
+
+
+<iframe height=500 width=500 src="upload/sawtooth.html"></iframe>
+
+
+<iframe height=500 width=500 src="upload/lalal.html",frameborder=0 allowfullscreen></iframe>
+
+
+<iframe height=500 width=500 src="upload/image-20200404224411207.png"></iframe>
+
+
+
 
 
 

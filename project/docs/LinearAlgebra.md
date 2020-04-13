@@ -77,9 +77,11 @@ $$
 $$
 引入 Levi-Civita 符号  $\varepsilon_{i j k}$ 
 $$
+\begin{equation}
 \hat{\mathbf{e}}_{i} \times \hat{\mathbf{e}}_{j}=\sum_{k} \varepsilon_{i j k} \hat{\mathbf{e}}_{k}
+\end{equation}
 $$
-上式表示，例如 
+该符号表示，如 
 $$
 \begin{aligned}
 &\hat{\mathbf{e}}_{x} \times \hat{\mathbf{e}}_{x}=0 \\
@@ -113,11 +115,13 @@ C_{i}=\sum_{j k} \varepsilon_{i j k} A_{j} B_{k} \label{cross1}
 $$
 当然，公式$(\ref{cross}) (\ref{cross1})$也可表示为行列式形式：
 $$
+\begin{equation}
 \mathbf{C}=\left|\begin{array}{lll}
 \hat{\mathbf{e}}_{x} & \hat{\mathbf{e}}_{y} & \hat{\mathbf{e}}_{z} \\
 A_{x} & A_{y} & A_{z} \\
 B_{x} & B_{y} & B_{z}
 \end{array}\right| \label{lalal}
+\end{equation}
 $$
 
 ### 直积/ 克罗内克积（Direct Product/  Kronecker product）：
