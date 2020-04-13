@@ -30,6 +30,10 @@ markdown_extensions:
     - mdx_math 
     - tables
     - fenced_code
+    - toc:
+        permalink: "#"
+        baselevel: 2
+        separator: "_"
 
 extra_javascript: 
     - mathjaxhelper.js

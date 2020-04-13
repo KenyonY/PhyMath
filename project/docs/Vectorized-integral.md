@@ -107,23 +107,26 @@ $$
 
 
 
-![image1](upload/image-20200404224411207.png)
+
+<iframe 
+	height=450 width=700 src="https://github.com/youyou-579/123/blob/master/2.8.jpg?raw=true" 
+	frameborder=0 
+	allowfullscreen>
+</iframe>
 
 
 
-<iframe height=500 width=500 src="upload/probar.gif"></iframe>
-
-
-<iframe height=500 width=500 src="upload/sawtooth.html"></iframe>
-
-
-<iframe height=500 width=500 src="upload/lalal.html",frameborder=0 allowfullscreen></iframe>
-
-
-<iframe height=500 width=500 src="upload/image-20200404224411207.png"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ilg3gGewQ5U" frameborder="0" allowfullscreen></iframe>
 
 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rDT45Z5Y9e8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<div align=center><img width = '750' height ='150' src ="https://github.com/beidongjiedeguang/PhyMath/blob/master/project/docs/upload/probar.gif?raw=true"/></div>
 
 
 
+<audio id="audio" controls="" preload="none">
+<source id="mp3" src="http://m10.music.126.net/20200413234824/821542963660b54ab5d74fdccefbf436/ymusic/045f/5252/075e/356a572ad8e81998df380478efd49a9c.mp3">
+</audio>
