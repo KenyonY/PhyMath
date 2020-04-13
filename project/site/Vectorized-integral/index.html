@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="k.y">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Vectorized Integral - PhyMath</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Vectorized Integral";
+    var mkdocs_page_input_path = "Vectorized-integral.md";
+    var mkdocs_page_url = "/beidongjiedeguang/phymath/Vectorized-integral/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> PhyMath</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../LinearAlgebra/">Linear Algebra</a>
+	    </li>
+          
+            <li class="toctree-l1 current">
+		
+    <a class="current" href="./">Vectorized Integral</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l2"><a href="#_1">一维积分：</a></li>
+    
+
+    <li class="toctree-l2"><a href="#_2">二维积分：</a></li>
+    
+
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Guide</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../guide/getting-started/">getting-started</a>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../guide/getting-started/">getting-style</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../LICENSE/">About</a>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">PhyMath</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Vectorized Integral</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/beidongjiedeguang/phymath/edit/master/docs/Vectorized-integral.md"> Edit on PhyMath</a>
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="_1">一维积分：</h2>
+<p>
+<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+I(f) 
+&= \int_{x_1}^{x_n}f(x)dx \\
+&= \sum_{i=1}^{n} w_{i} f\left(x_{i}\right)+ R(n) \\
+&\approx  \sum_{i=1}^{n} w_{i} f\left(x_{i}\right) 
+\end{aligned}
+\end{equation}
+</script>
+</p>
+<p>不同的数值积分方法就是上面的$w_i$不同， 最简单的矩形积分法如下：
+<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+\int_{x_0}^{x_n}f(x)dx  
+&\approx \sum_{i=1}^{n} f(x_i) \Delta x = \Delta x \sum_{i=1}^{n} f(x_i)\\
+&= \frac{x_n - x_1}{n}\sum_{i=1}^{n} f(x_i)
+\end{aligned}
+\end{equation}
+</script>
+</p>
+<p>复合一维积分：
+<script type="math/tex; mode=display">
+\begin{equation}
+\begin{aligned}
+\label{eq: integ1d}
+I(f) &=\int_{x_1}^{x_n}f(x)g(x)dx
+\approx \sum_{i=1}^{n} f(x_i)g(x_i) \Delta x = \Delta x \sum_{i=1}^{n} f(x_i)g(x_i)\\
+&= \frac{x_n - x_1}{n} \vec{f(x)} \cdot \vec{g(x)}
+\end{aligned}
+\end{equation}
+</script>
+</p>
+<h2 id="_2">二维积分：</h2>
+<p>对于两个变量的积分的表达式，比如x和y，可以写成两种积分符号：
+<script type="math/tex; mode=display">
+\iint f(x, y) d x d y \text { 或者 } \, \int_{x_{1}}^{x_{2}} d x \int_{y_{1}(x)}^{y_{2}(x)} d y\ f(x, y) \label{integ2d}
+</script>
+</p>
+<p>其中，右边的形式可以更具体地表示积分界限，并给出了一个明确的指示，即y积分应该首先执行，或者使用单个积分符号，如
+<script type="math/tex; mode=display">
+\int_{S} f(x, y) d A
+</script>
+其中S(如果显式显示)为二维积分区域，$dA$为“area” (在笛卡尔坐标系中，等于$dxdy$)</p>
+<p>OK，这不是重点。</p>
+<p>对于公式$\ref{integ2d}$ ，将其中的$f(x,y)$变量分离为 $f_1(x)f_2(y)$ ，将得到：
+<script type="math/tex; mode=display">
+\label{sepa_value}
+\int_{x_1}^{x_2} f_1(x)dx \int_{y_1(x)}^{y_2(x)} f_2(y)dy\\
+</script>
+</p>
+<p>当然， 这可能不是我要的形式， 我希望的是：
+$$
+\begin{equation}
+\begin{aligned}
+&amp;\int_{x_1}^{x_2} dx \int_{y_1(x)}^{y_2(x)}dy \ f_1(x)f_2(y)\</p>
+<p>&amp;\approx  \Delta x \Delta y \sum_{i}^{N}\sum_{j}^{M}\ f_1(x_i)f_2(y_j) \</p>
+<p>&amp;=\frac{x_2 - x_1}{N} \frac{y_2(x) - y_1(x)}{M} \sum \vec{f_1(x)} \otimes \vec{f_2(y)}</p>
+<p>\end{aligned}
+\end{equation}
+$$</p>
+<p>计算</p>
+<p>一维：</p>
+<p>
+<script type="math/tex; mode=display">
+\pi = I(f) =\int_{0}^{1}\frac{4}{1+x^2}dx
+</script>
+</p>
+<p>二维：
+$$
+I(f(x, y))=\int_{1}^{2} \int_{1}^{x} x y d x d y \</p>
+<p>
+<script type="math/tex; mode=display">\begin{aligned}
+\iint x y \, \mathrm{d} \sigma &=\int_{1}^{2}\left[\int_{1}^{x} x y \mathrm{d} y\right] \mathrm{d} x=\int_{1}^{2}\left[x \cdot \frac{y^{2}}{2}\right]_{1}^{x} \mathrm{d} x \\
+&=\int_{1}^{2}\left(\frac{x^{3}}{2}-\frac{x}{2}\right) \mathrm{d} x=\left[\frac{x^{4}}{8}-\frac{x^{2}}{4}\right]_{1}^{2}=\frac{9}{8}
+\end{aligned}</script>
+$$</p>
+<p><img src="upload/image-20200404224411207.png" alt="image-20200404224411207" style="zoom: 67%;" /></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../guide/getting-started/" class="btn btn-neutral float-right" title="getting-started">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../LinearAlgebra/" class="btn btn-neutral" title="Linear Algebra"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" style="cursor: pointer">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../LinearAlgebra/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../guide/getting-started/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../mathjaxhelper.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_HTML" defer></script>
+      <script src="../search/main.js" defer></script>
+
+</body>
+</html>

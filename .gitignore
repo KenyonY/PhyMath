@@ -1,0 +1,28 @@
+MathematicalMethods/
+光学/
+*.flac
+*.avi
+workflow.py
+night_workflow.py
+generateREADME.py
+
+# windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python:
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+dist
+build
+
+# juyter notebook
+.ipynb_checkpoints/
+# pycharm
+.idea/
+#vim
+*.swp
+*.un~
