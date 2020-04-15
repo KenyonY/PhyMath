@@ -64,11 +64,11 @@
     
         <ul>
         
-            <li><a class="toctree-l3" href="#dot-product-inner-product">点积(Dot Product)  [ 内积(Inner  Product)]：</a></li>
+            <li><a class="toctree-l3" href="#dot_product_inner_product">点积(Dot Product)  [ 内积(Inner  Product)]：</a></li>
         
-            <li><a class="toctree-l3" href="#cross-product-outer-product">叉积( Cross Product)  [ 外积(Outer Product)]：</a></li>
+            <li><a class="toctree-l3" href="#cross_product_outer_product">叉积( Cross Product)  [ 外积(Outer Product)]：</a></li>
         
-            <li><a class="toctree-l3" href="#direct-product-kronecker-product">直积/ 克罗内克积（Direct Product/  Kronecker product）：</a></li>
+            <li><a class="toctree-l3" href="#direct_product_kronecker_product">直积/ 克罗内克积（Direct Product/  Kronecker product）：</a></li>
         
         </ul>
     
@@ -135,8 +135,8 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="review">REVIEW</h1>
-<p>一个向量A可以用一个单列矩阵 $\mathbf{a}$ 来表示，它的元素是A的分量:
+                <h2 id="review">REVIEW<a class="headerlink" href="#review" title="Permanent link">#</a></h2>
+<p>一个向量$\mathbf{A}$可以用一个单列矩阵 $\mathbf{a}$ 来表示，它的元素是A的分量:
 <script type="math/tex; mode=display">
 \mathbf{A} \Longrightarrow \mathbf{a}=\left(\begin{array}{l}
 A_{1} \\
@@ -144,13 +144,13 @@ A_{2} \\
 A_{3}
 \end{array}\right) \notag
 </script>
-表示向量A的矩阵的转置是一个单行矩阵，称为行向量:
+表示向量$\mathbf{A}$的矩阵的转置是一个单行矩阵，称为行向量:
 <script type="math/tex; mode=display">
 \mathbf{a}^{T}=\left(A_{1} \quad A_{2} \quad A_{3}\right) \notag
 </script>
 </p>
-<h3 id="dot-product-inner-product">点积(Dot Product)  [ 内积(Inner  Product)]：</h3>
-<p>$\mathbf{A} \cdot \mathbf{B}$ 可由$\mathbf{a}^{T} \mathbf{b}$ 表示，，或者 a 和b 都是实数，所以有$a^†b$。此外，$a^ T b = b^ T a$。
+<h4 id="dot_product_inner_product">点积(Dot Product)  [ 内积(Inner  Product)]：<a class="headerlink" href="#dot_product_inner_product" title="Permanent link">#</a></h4>
+<p>$\mathbf{A} \cdot \mathbf{B}$ 可由$\mathbf{a}^{T} \mathbf{b}$ 表示，或者若 $\mathbf{a}$ 和$\mathbf{b}$ 都为实，有$\mathbf{a}^†\mathbf{b}$。此外，$\mathbf{a}^ T \mathbf{b} = \mathbf{b}^ T \mathbf{a}$。
 <script type="math/tex; mode=display">
 \begin{equation}
 \begin{aligned}
@@ -167,7 +167,7 @@ B_{3}
 \end{equation}
 </script>
 </p>
-<p>在此，给出一个以后将会用到的例子:</p>
+<p>在此，给出一个之后将用到的简单示例:</p>
 <p>对于
 <script type="math/tex; mode=display">
 \begin{equation}
@@ -192,7 +192,7 @@ A B=\left(\begin{array}{rrr}
 \end{array}\right), \quad B A=(4 \times 1+5 \times 2+6 \times 3)=(32)\end{equation}
 </script>
 </p>
-<h3 id="cross-product-outer-product">叉积( Cross Product)  [ 外积(Outer Product)]：</h3>
+<h4 id="cross_product_outer_product">叉积( Cross Product)  [ 外积(Outer Product)]：<a class="headerlink" href="#cross_product_outer_product" title="Permanent link">#</a></h4>
 <p>$\mathbf{A} \times \mathbf{B}$  定义：
 <script type="math/tex; mode=display">
 \mathbf{C}=\mathbf{A} \times \mathbf{B}=(A B \sin \theta) \hat{\mathbf{e}}_{c}
@@ -213,11 +213,9 @@ A B=\left(\begin{array}{rrr}
 </script>
 该符号表示，如 
 <script type="math/tex; mode=display">
-\begin{aligned}
-&\hat{\mathbf{e}}_{x} \times \hat{\mathbf{e}}_{x}=0 \\
-&\hat{\mathbf{e}}_{x} \times \hat{\mathbf{e}}_{y}=\hat{\mathbf{e}}_{z}\\
-&\hat{\mathbf{e}}_{y} \times \hat{\mathbf{e}}_{x}=-\hat{\mathbf{e}}_{z}
-\end{aligned}
+\hat{\mathbf{e}}_{x} \times \hat{\mathbf{e}}_{x}=0 ,\quad
+\hat{\mathbf{e}}_{x} \times \hat{\mathbf{e}}_{y}=\hat{\mathbf{e}}_{z} ,\quad
+\hat{\mathbf{e}}_{y} \times \hat{\mathbf{e}}_{x}=-\hat{\mathbf{e}}_{z}
 </script>
 </p>
 <p>那么我们展开$\mathbf{A} \times \mathbf{B}$ ，得到：
@@ -253,7 +251,7 @@ B_{x} & B_{y} & B_{z}
 \end{equation}
 </script>
 </p>
-<h3 id="direct-product-kronecker-product">直积/ 克罗内克积（Direct Product/  Kronecker product）：</h3>
+<h4 id="direct_product_kronecker_product">直积/ 克罗内克积（Direct Product/  Kronecker product）：<a class="headerlink" href="#direct_product_kronecker_product" title="Permanent link">#</a></h4>
 <p>将$m×n$矩阵$\mathbf{A}$与$m'× n'$矩阵$\mathbf{B}$结合得到直积矩阵 $\mathrm{C}=\mathrm{A} \otimes \mathrm{B}$ ,其维度为$m m^{\prime} \times n n^{\prime}$ ，具体例子如下：</p>
 <p>如果A和B都是2×2矩阵，我们可以这样写，先用符号形式，然后用完全展开的形式
 <script type="math/tex; mode=display">
@@ -287,6 +285,7 @@ x_{2} y_{2}
 </script>
 第三个例子是来自例子等式$(\ref{example1})$ :</p>
 <p>它是特殊情况下的一个实例(列向量乘以行向量)，其中直积和内积重合: $AB =A \otimes B$ </p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="750" height="2" loading="lazy" sandbox="allow-popups allow-scripts allow-same-origin" src="http://q8qk932sy.bkt.clouddn.com/Ihadsuchalonelylife.mp3"></iframe>
               
             </div>
           </div>
