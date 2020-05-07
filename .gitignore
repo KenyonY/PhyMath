@@ -2,6 +2,7 @@ MathematicalMethods/
 光学/
 *.flac
 *.avi
+project/site/
 workflow.py
 night_workflow.py
 generateREADME.py

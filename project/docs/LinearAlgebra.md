@@ -1,6 +1,6 @@
 # REVIEW 
 
-一个向量A可以用一个单列矩阵 $\mathbf{a}$ 来表示，它的元素是A的分量:
+一个向量$\mathbf{A}$可以用一个单列矩阵 $\mathbf{a}$ 来表示，它的元素是A的分量:
 $$
 \mathbf{A} \Longrightarrow \mathbf{a}=\left(\begin{array}{l}
 A_{1} \\
@@ -8,14 +8,14 @@ A_{2} \\
 A_{3}
 \end{array}\right) \notag
 $$
-表示向量A的矩阵的转置是一个单行矩阵，称为行向量:
+表示向量$\mathbf{A}$的矩阵的转置是一个单行矩阵，称为行向量:
 $$
 \mathbf{a}^{T}=\left(A_{1} \quad A_{2} \quad A_{3}\right) \notag
 $$
 
 ### 点积(Dot Product)  [ 内积(Inner  Product)]：
 
-$\mathbf{A} \cdot \mathbf{B}$ 可由$\mathbf{a}^{T} \mathbf{b}$ 表示，，或者 a 和b 都是实数，所以有$a^†b$。此外，$a^ T b = b^ T a$。
+$\mathbf{A} \cdot \mathbf{B}$ 可由$\mathbf{a}^{T} \mathbf{b}$ 表示，或者若 $\mathbf{a}$ 和$\mathbf{b}$ 都为实，有$\mathbf{a}^†\mathbf{b}$。此外，$\mathbf{a}^ T \mathbf{b} = \mathbf{b}^ T \mathbf{a}$。
 $$
 \begin{equation}
 \begin{aligned}
@@ -32,7 +32,7 @@ B_{3}
 \end{equation}
 $$
 
-在此，给出一个以后将会用到的例子:
+在此，给出一个之后将用到的简单示例:
 
 对于
 $$
@@ -83,11 +83,9 @@ $$
 $$
 该符号表示，如 
 $$
-\begin{aligned}
-&\hat{\mathbf{e}}_{x} \times \hat{\mathbf{e}}_{x}=0 \\
-&\hat{\mathbf{e}}_{x} \times \hat{\mathbf{e}}_{y}=\hat{\mathbf{e}}_{z}\\
-&\hat{\mathbf{e}}_{y} \times \hat{\mathbf{e}}_{x}=-\hat{\mathbf{e}}_{z}
-\end{aligned}
+\hat{\mathbf{e}}_{x} \times \hat{\mathbf{e}}_{x}=0 ,\quad
+\hat{\mathbf{e}}_{x} \times \hat{\mathbf{e}}_{y}=\hat{\mathbf{e}}_{z} ,\quad
+\hat{\mathbf{e}}_{y} \times \hat{\mathbf{e}}_{x}=-\hat{\mathbf{e}}_{z}
 $$
 
 
@@ -161,3 +159,13 @@ $$
 第三个例子是来自例子等式$(\ref{example1})$ :
 
 它是特殊情况下的一个实例(列向量乘以行向量)，其中直积和内积重合: $AB =A \otimes B$ 
+
+
+
+
+
+
+
+
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=761323&auto=1&height=66"></iframe>
